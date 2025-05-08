@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+header .navigation {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  padding: 10px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+header .brand {
+  font-size: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+}
+header .brand:hover {
+  color: #dc9f1a;
+  transition: 0.3s;
+}
+
+header .navigation {
+  display: flex;
+}
+header .navigation-items a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1.1em;
+  transition: 0.3s;
+}
+
+header .navigation-items a:hover {
+  color: #f0a500;
+}
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #5d90c4 0%, #ffffff 100%);
+  }
+  
+  .section {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .subtitle {
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .form {
+    flex: 1;
+    min-width: 280px;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  input, textarea {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: #f0a500;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+    outline: none;
+  }
+  
+  button {
+    background-color: #f0a500;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #d48806;
+  }
+  
+  #confirmation {
+    color: rgb(0, 0, 0);
+    display: none;
+  }
+  
+  .info {
+    flex: 1;
+    min-width: 280px;
+    max-width: 450px;
+    text-align: left;
+  }
+  
+  .info h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+  }
+  
+  iframe {
+    margin-top: 15px;
+    border-radius: 10px;
+  }
+
+  button {
+    background: linear-gradient(45deg, #2a4767, #6c92b4);
+    transition: transform 0.3s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+  }
+
+  .form, .info {
+    background-color: rgb(63, 90, 118);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    color: rgb(208, 210, 211);
+  }  

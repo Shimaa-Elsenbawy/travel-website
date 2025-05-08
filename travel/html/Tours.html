@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Plan your perfect trip with TravelExplorer - find hotels, activities, and destinations worldwide">
+    <meta property="og:title" content="TravelExplorer - Your Perfect Travel Companion">
+    <meta property="og:type" content="website">
+    <title>Travel Explorer</title>
+    <link rel="stylesheet" href="../css/TourStyle.css" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../JS/TourScript.js"></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="nav-container">
+            <h1 class="logo">TravelExplorer</h1>
+            <ul class="nav-links">
+                <li><a href="../html/index.html">Home</a></li>
+                <li><a href="../html/Contact.html">Contact</a></li>
+                <li><a href="../html/Reviews.html">Reviews</a></li>
+            </ul>
+        </div>
+        <div class="header-content">
+            <h2>Plan Your Perfect Trip</h2>
+            <p>Filter by destination, services, rating, and more.</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="controls">
+            <div class="toggle-section">
+                <label><input type="radio" name="mode" value="hotel" checked /> Hotel</label>
+                <label><input type="radio" name="mode" value="activity" /> Activity</label>
+            </div>
+
+            <div class="filters">
+                <select id="destinationFilter">
+                    <option value="all">All Destinations</option>
+                    <option value="paris">Paris</option>
+                    <option value="cairo">Cairo</option>
+                    <option value="tokyo">Tokyo</option>
+                </select>
+
+                <select id="serviceFilter">
+                    <option value="all">All Services</option>
+                    <option value="wifi">Wi-Fi</option>
+                    <option value="breakfast">Breakfast</option>
+                    <option value="pool">Pool</option>
+                </select>
+
+                <select id="activityFilter" class="hidden">
+                    <option value="all">All Activities</option>
+                    <option value="safari">Safari</option>
+                    <option value="cruise">Cruise</option>
+                    <option value="hiking">Hiking</option>
+                    <option value="museum">Museum</option>
+                    <option value="historic">Historic</option>
+                    <option value="picnic">Picnic</option>
+                    <option value="romance">Romance</option>
+                </select>
+
+                <input type="date" id="checkIn" />
+                <input type="date" id="checkOut" />
+
+                <select id="sortFilter">
+                    <option value="default">Sort By</option>
+                    <option value="price">Price</option>
+                    <option value="rating">Rating</option>
+                    <option value="services">Service Count</option>
+                </select>
+            </div>
+        </section>
+
+        <section id="results" class="hotel-list"></section>
+    </main>
+
+     
+  <section class="testimonials-section">
+    <div class="testimonials-content">
+      <h2 class="testimonials-title">What Our Travelers Say</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-text">
+            "The best travel experience I've ever had! The team went above and beyond to make our trip to Japan
+            unforgettable. From the moment we landed until we left, everything was perfectly organized."
+          </div>
+          <div class="testimonial-author">
+            <img
+              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+              alt="Sarah Johnson" class="author-image">
+            <div>
+              <div>Sarah Johnson</div>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-text">
+            "I was skeptical about booking through a travel agency, but this experience changed my mind completely. The
+            attention to detail and personalized service made our European tour absolutely perfect."
+          </div>
+          <div class="testimonial-author">
+            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Michael Chen" class="author-image">
+            <div>
+              <div>Michael Chen</div>
+              <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="social-icons">
+        <a href="#" class="facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+        <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="footer-sections">
+        <div class="footer-section">
+          <h3>About Us</h3>
+          <ul>
+            <li><a href="#">Who We Are</a></li>
+            <li><a href="#">Our Vision</a></li>
+            <li><a href="#">Our Team</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Destinations</h3>
+          <ul>
+            <li><a href="#">Europe</a></li>
+            <li><a href="#">Asia</a></li>
+            <li><a href="#">Africa</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#">Hotel Booking</a></li>
+            <li><a href="#">Flight Tickets</a></li>
+            <li><a href="#">Tour Packages</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <ul>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Complaints</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="copyright">
+        <p>All Rights Reserved &copy; 2024 Travel Website</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+
+</html>
